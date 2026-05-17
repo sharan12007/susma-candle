@@ -1,0 +1,8 @@
+▲ Next.js 16.2.6 (Turbopack)
+- Local:         http://127.0.0.1:3000
+- Network:       http://127.0.0.1:3000
+✓ Ready in 828ms
+Creating turbopack project { dir: 'D:\\ecommerce-website-build-final', testMode: true }
+
+○ Compiling / ...
+ GET / 200 in 14.7s (next.js: 13.3s, application-code: 1420ms)
