@@ -181,7 +181,7 @@ export default function ShippingPage() {
               </h2>
               <div className="mt-4 space-y-4 text-muted-foreground">
                 <p>
-                  We want you to love your Lumière candles. If you&apos;re not completely satisfied, 
+                  We want you to love your SUARIN candles. If you&apos;re not completely satisfied, 
                   we accept returns within 30 days of delivery.
                 </p>
                 <p>

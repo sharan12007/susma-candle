@@ -41,7 +41,7 @@ export default function NewsletterSection() {
           </h2>
           <p className="mx-auto mb-8 max-w-xl text-base font-light leading-relaxed text-muted-foreground">
             Be the first to discover new collections, exclusive offers, and the art of
-            mindful living. Welcome to the Lumière community.
+            mindful living. Welcome to the SUARIN community.
           </p>
 
           {isSubmitted ? (
@@ -51,7 +51,7 @@ export default function NewsletterSection() {
               className="rounded-lg border border-primary/30 bg-primary/10 p-6"
             >
               <p className="text-lg font-light text-foreground">
-                Welcome to Lumière. Check your inbox for a special gift.
+                Welcome to SUARIN. Check your inbox for a special gift.
               </p>
             </motion.div>
           ) : (

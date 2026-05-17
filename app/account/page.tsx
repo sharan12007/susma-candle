@@ -27,7 +27,7 @@ import { Order, OrderStatus } from '@/lib/types'
 // Mock orders data - replace with API call
 const mockOrders: Order[] = [
   {
-    id: 'LUM-ABC123-XYZ',
+    id: 'SUA-ABC123-XYZ',
     userId: '1',
     items: [
       { productId: '1', productName: 'Midnight Amber', quantity: 2, price: 68 },
@@ -60,7 +60,7 @@ const mockOrders: Order[] = [
     updatedAt: new Date('2024-01-16'),
   },
   {
-    id: 'LUM-DEF456-ABC',
+    id: 'SUA-DEF456-ABC',
     userId: '1',
     items: [
       { productId: '2', productName: 'Rose Noir', quantity: 1, price: 75 },

@@ -40,7 +40,7 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <Link href="/" className="inline-block">
               <span className="text-2xl font-light tracking-[0.3em] text-foreground">
-                LUMIÈRE
+                SUARIN
               </span>
             </Link>
             <p className="mt-4 text-sm font-light leading-relaxed text-muted-foreground">
@@ -122,7 +122,7 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin className="mt-0.5 h-4 w-4 flex-shrink-0 text-primary" />
                 <span className="text-sm font-light text-muted-foreground">
-                  123 Rue de la Lumière
+                  123 Rue de la SUARIN
                   <br />
                   Paris, 75001 France
                 </span>
@@ -130,10 +130,10 @@ export default function Footer() {
               <li className="flex items-center gap-3">
                 <Mail className="h-4 w-4 flex-shrink-0 text-primary" />
                 <a
-                  href="mailto:hello@lumiere.com"
+                  href="mailto:hello@suarin.com"
                   className="text-sm font-light text-muted-foreground transition-colors hover:text-foreground"
                 >
-                  hello@lumiere.com
+                  hello@suarin.com
                 </a>
               </li>
               <li className="flex items-center gap-3">
@@ -152,7 +152,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="mt-16 flex flex-col items-center justify-between gap-4 border-t border-border/50 pt-8 sm:flex-row">
           <p className="text-xs font-light text-muted-foreground">
-            &copy; {new Date().getFullYear()} Lumière. All rights reserved.
+            &copy; {new Date().getFullYear()} SUARIN. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
             <Link

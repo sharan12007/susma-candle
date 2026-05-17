@@ -34,7 +34,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       // }
       
       // For now, check localStorage for demo
-      const savedUser = localStorage.getItem('lumiere-user')
+      const savedUser = localStorage.getItem('suarin-user')
       if (savedUser) {
         setUser(JSON.parse(savedUser))
       }
@@ -71,7 +71,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         createdAt: new Date(),
       }
       setUser(mockUser)
-      localStorage.setItem('lumiere-user', JSON.stringify(mockUser))
+      localStorage.setItem('suarin-user', JSON.stringify(mockUser))
       return { success: true }
     } catch {
       return { success: false, error: 'An unexpected error occurred' }
@@ -104,7 +104,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         createdAt: new Date(),
       }
       setUser(mockUser)
-      localStorage.setItem('lumiere-user', JSON.stringify(mockUser))
+      localStorage.setItem('suarin-user', JSON.stringify(mockUser))
       return { success: true }
     } catch {
       return { success: false, error: 'An unexpected error occurred' }
@@ -115,14 +115,14 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     // TODO: Call logout API
     // await fetch('/api/auth/logout', { method: 'POST' })
     setUser(null)
-    localStorage.removeItem('lumiere-user')
+    localStorage.removeItem('suarin-user')
   }
 
   const updateUser = (updates: Partial<User>) => {
     if (user) {
       const updatedUser = { ...user, ...updates }
       setUser(updatedUser)
-      localStorage.setItem('lumiere-user', JSON.stringify(updatedUser))
+      localStorage.setItem('suarin-user', JSON.stringify(updatedUser))
     }
   }
 

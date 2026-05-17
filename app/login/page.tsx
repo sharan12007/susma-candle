@@ -63,7 +63,7 @@ export default function LoginPage() {
             <div className="mb-8 text-center">
               <h1 className="mb-2 text-2xl font-light tracking-wide text-foreground">Welcome Back</h1>
               <p className="text-sm text-muted-foreground">
-                Sign in to your Lumière account
+                Sign in to your SUARIN account
               </p>
             </div>
 

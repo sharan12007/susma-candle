@@ -37,7 +37,7 @@ export default function TermsPage() {
                 <h2 className="text-2xl font-light tracking-wide text-foreground">Agreement to Terms</h2>
                 <div className="mt-4 space-y-4 text-muted-foreground">
                   <p>
-                    By accessing or using the Lumière website, you agree to be bound by these Terms of 
+                    By accessing or using the SUARIN website, you agree to be bound by these Terms of 
                     Service and all applicable laws and regulations. If you do not agree with any of 
                     these terms, you are prohibited from using or accessing this site.
                   </p>
@@ -48,20 +48,20 @@ export default function TermsPage() {
                 <h2 className="text-2xl font-light tracking-wide text-foreground">Use License</h2>
                 <div className="mt-4 space-y-4 text-muted-foreground">
                   <p>
-                    Permission is granted to temporarily view the materials on Lumière&apos;s website for 
+                    Permission is granted to temporarily view the materials on SUARIN&apos;s website for 
                     personal, non-commercial transitory viewing only. This is the grant of a license, 
                     not a transfer of title, and under this license you may not:
                   </p>
                   <ul className="list-disc pl-6 space-y-2">
                     <li>Modify or copy the materials</li>
                     <li>Use the materials for any commercial purpose or public display</li>
-                    <li>Attempt to decompile or reverse engineer any software on Lumière&apos;s website</li>
+                    <li>Attempt to decompile or reverse engineer any software on SUARIN&apos;s website</li>
                     <li>Remove any copyright or other proprietary notations from the materials</li>
                     <li>Transfer the materials to another person or &ldquo;mirror&rdquo; the materials on any other server</li>
                   </ul>
                   <p>
                     This license shall automatically terminate if you violate any of these restrictions 
-                    and may be terminated by Lumière at any time.
+                    and may be terminated by SUARIN at any time.
                   </p>
                 </div>
               </div>
@@ -70,7 +70,7 @@ export default function TermsPage() {
                 <h2 className="text-2xl font-light tracking-wide text-foreground">Products and Purchases</h2>
                 <div className="mt-4 space-y-4 text-muted-foreground">
                   <p>
-                    All products displayed on the Lumière website are subject to availability. We 
+                    All products displayed on the SUARIN website are subject to availability. We 
                     reserve the right to discontinue any product at any time. Prices for our products 
                     are subject to change without notice.
                   </p>
@@ -105,7 +105,7 @@ export default function TermsPage() {
                 <h2 className="text-2xl font-light tracking-wide text-foreground">Shipping and Delivery</h2>
                 <div className="mt-4 space-y-4 text-muted-foreground">
                   <p>
-                    Shipping times are estimates and are not guaranteed. Lumière is not responsible 
+                    Shipping times are estimates and are not guaranteed. SUARIN is not responsible 
                     for delays caused by customs, weather, or other factors beyond our control.
                   </p>
                   <p>
@@ -136,12 +136,12 @@ export default function TermsPage() {
                 <div className="mt-4 space-y-4 text-muted-foreground">
                   <p>
                     All content on this website, including text, graphics, logos, images, and software, 
-                    is the property of Lumière or its content suppliers and is protected by international 
+                    is the property of SUARIN or its content suppliers and is protected by international 
                     copyright laws.
                   </p>
                   <p>
-                    The Lumière name, logo, and all related product and service names, design marks, 
-                    and slogans are trademarks of Lumière. You may not use these marks without our 
+                    The SUARIN name, logo, and all related product and service names, design marks, 
+                    and slogans are trademarks of SUARIN. You may not use these marks without our 
                     prior written permission.
                   </p>
                 </div>
@@ -167,7 +167,7 @@ export default function TermsPage() {
                 <h2 className="text-2xl font-light tracking-wide text-foreground">Disclaimer</h2>
                 <div className="mt-4 space-y-4 text-muted-foreground">
                   <p>
-                    The materials on Lumière&apos;s website are provided on an &ldquo;as is&rdquo; basis. Lumière makes 
+                    The materials on SUARIN&apos;s website are provided on an &ldquo;as is&rdquo; basis. SUARIN makes 
                     no warranties, expressed or implied, and hereby disclaims and negates all other 
                     warranties including, without limitation, implied warranties or conditions of 
                     merchantability, fitness for a particular purpose, or non-infringement of 
@@ -180,10 +180,10 @@ export default function TermsPage() {
                 <h2 className="text-2xl font-light tracking-wide text-foreground">Limitations</h2>
                 <div className="mt-4 space-y-4 text-muted-foreground">
                   <p>
-                    In no event shall Lumière or its suppliers be liable for any damages (including, 
+                    In no event shall SUARIN or its suppliers be liable for any damages (including, 
                     without limitation, damages for loss of data or profit, or due to business 
                     interruption) arising out of the use or inability to use the materials on 
-                    Lumière&apos;s website.
+                    SUARIN&apos;s website.
                   </p>
                 </div>
               </div>
@@ -203,7 +203,7 @@ export default function TermsPage() {
                 <h2 className="text-2xl font-light tracking-wide text-foreground">Changes to Terms</h2>
                 <div className="mt-4 space-y-4 text-muted-foreground">
                   <p>
-                    Lumière reserves the right to revise these terms of service at any time without 
+                    SUARIN reserves the right to revise these terms of service at any time without 
                     notice. By using this website, you are agreeing to be bound by the then-current 
                     version of these terms of service.
                   </p>
@@ -217,10 +217,10 @@ export default function TermsPage() {
                     Questions about the Terms of Service should be sent to us at:
                   </p>
                   <p>
-                    Lumière<br />
-                    123 Rue de la Lumière<br />
+                    SUARIN<br />
+                    123 Rue de la SUARIN<br />
                     Paris, 75001 France<br />
-                    Email: legal@lumiere.com
+                    Email: legal@SUARIN.com
                   </p>
                 </div>
               </div>

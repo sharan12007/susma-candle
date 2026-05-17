@@ -59,7 +59,7 @@ export default function AboutSection() {
               className="space-y-4 text-base font-light leading-relaxed text-muted-foreground"
             >
               <p>
-                Born from a passion for artisanal excellence, Lumière began in a small Parisian
+                Born from a passion for artisanal excellence, SUARIN began in a small Parisian
                 atelier where the art of candle-making has been perfected over generations.
               </p>
               <p>

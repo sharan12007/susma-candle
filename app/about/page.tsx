@@ -30,7 +30,7 @@ const values = [
 ]
 
 const milestones = [
-  { year: '2018', title: 'The Beginning', description: 'Lumière was born in a small Parisian atelier with a passion for fragrance.' },
+  { year: '2018', title: 'The Beginning', description: 'SUARIN was born in a small Parisian atelier with a passion for fragrance.' },
   { year: '2019', title: 'First Collection', description: 'Launched our signature collection with 5 unique fragrances.' },
   { year: '2021', title: 'Global Expansion', description: 'Expanded shipping to over 50 countries worldwide.' },
   { year: '2023', title: 'Sustainability Pledge', description: 'Achieved carbon-neutral status and launched refillable candle line.' },
@@ -54,7 +54,7 @@ export default function AboutPage() {
             </h1>
             <p className="mx-auto mt-6 max-w-2xl text-lg font-light leading-relaxed text-muted-foreground">
               Born from a passion for fragrance and a commitment to artisan craftsmanship, 
-              Lumière creates luxury candles that transform spaces and evoke emotions.
+              SUARIN creates luxury candles that transform spaces and evoke emotions.
             </p>
           </motion.div>
         </div>
@@ -76,13 +76,13 @@ export default function AboutPage() {
                   The Art of Illumination
                 </h2>
                 <p className="mt-6 text-muted-foreground leading-relaxed">
-                  In a small atelier nestled in the heart of Paris, Lumière was born from a simple 
+                  In a small atelier nestled in the heart of Paris, SUARIN was born from a simple 
                   belief: that light and fragrance have the power to transform any space into a 
                   sanctuary. Our founder, inspired by the golden light of Parisian evenings, set out 
                   to create candles that capture moments of beauty and serenity.
                 </p>
                 <p className="mt-4 text-muted-foreground leading-relaxed">
-                  Today, each Lumière candle is still hand-poured using traditional techniques passed 
+                  Today, each SUARIN candle is still hand-poured using traditional techniques passed 
                   down through generations of master chandlers. We blend the finest natural waxes with 
                   precious fragrance oils, creating scents that tell stories and evoke cherished memories.
                 </p>
@@ -163,7 +163,7 @@ export default function AboutPage() {
           >
             <h2 className="text-3xl font-light tracking-wide text-foreground">Our Journey</h2>
             <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
-              Key moments in the Lumière story
+              Key moments in the SUARIN story
             </p>
           </motion.div>
           <div className="mt-16 space-y-8">
@@ -199,7 +199,7 @@ export default function AboutPage() {
             viewport={{ once: true }}
           >
             <h2 className="text-3xl font-light tracking-wide text-foreground">
-              Experience the Lumière Difference
+              Experience the SUARIN Difference
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
               Discover our collection of handcrafted luxury candles

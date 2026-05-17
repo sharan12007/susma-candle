@@ -184,7 +184,7 @@ export default function CareersPage() {
             </h2>
             <div className="mt-4 space-y-4 text-muted-foreground">
               <p>
-                At Lumière, we believe that great products come from great teams. We&apos;ve built a 
+                At SUARIN, we believe that great products come from great teams. We&apos;ve built a 
                 culture that values creativity, craftsmanship, and collaboration. Our team members 
                 are encouraged to bring their whole selves to work and contribute their unique 
                 perspectives.

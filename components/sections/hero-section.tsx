@@ -89,7 +89,7 @@ export default function HeroSection() {
             variants={textVariants}
             className="mx-auto mb-8 max-w-lg text-base font-light leading-relaxed text-muted-foreground lg:mx-0 lg:text-lg"
           >
-            Each Lumière candle is a masterwork of scent and light, handcrafted to transform
+            Each SUARIN candle is a masterwork of scent and light, handcrafted to transform
             your space into a sanctuary of warmth and elegance.
           </motion.p>
 

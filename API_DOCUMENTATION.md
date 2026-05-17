@@ -1,6 +1,6 @@
-# Lumière E-commerce API Documentation
+# SUARIN E-commerce API Documentation
 
-This document outlines all the API endpoints needed for the Lumière luxury candle e-commerce website.
+This document outlines all the API endpoints needed for the SUARIN luxury candle e-commerce website.
 
 ## Base URL
 ```
@@ -228,7 +228,7 @@ Create a new order.
 {
   "success": true,
   "order": {
-    "id": "LUM-ABC123-XYZ",
+    "id": "SUA-ABC123-XYZ",
     "items": [
       {
         "productId": "1",
@@ -266,7 +266,7 @@ Get orders for the authenticated user.
 {
   "orders": [
     {
-      "id": "LUM-ABC123-XYZ",
+      "id": "SUA-ABC123-XYZ",
       "items": [...],
       "total": 238.68,
       "status": "shipped",
@@ -292,7 +292,7 @@ Get a single order by ID.
 ```json
 {
   "order": {
-    "id": "LUM-ABC123-XYZ",
+    "id": "SUA-ABC123-XYZ",
     "userId": "user_123",
     "items": [
       {
@@ -348,7 +348,7 @@ Create a Razorpay order for payment.
 **Request Body:**
 ```json
 {
-  "orderId": "LUM-ABC123-XYZ",
+  "orderId": "SUA-ABC123-XYZ",
   "amount": 23868
 }
 ```
@@ -372,7 +372,7 @@ Verify Razorpay payment after completion.
 **Request Body:**
 ```json
 {
-  "orderId": "LUM-ABC123-XYZ",
+  "orderId": "SUA-ABC123-XYZ",
   "razorpayOrderId": "order_xyz123",
   "razorpayPaymentId": "pay_abc123",
   "razorpaySignature": "signature_hash"
@@ -385,7 +385,7 @@ Verify Razorpay payment after completion.
   "success": true,
   "message": "Payment verified successfully",
   "order": {
-    "id": "LUM-ABC123-XYZ",
+    "id": "SUA-ABC123-XYZ",
     "paymentStatus": "paid"
   }
 }
@@ -440,7 +440,7 @@ Update order status and tracking.
 {
   "success": true,
   "order": {
-    "id": "LUM-ABC123-XYZ",
+    "id": "SUA-ABC123-XYZ",
     "status": "shipped",
     "trackingId": "TRK-123456789"
   }
@@ -667,7 +667,7 @@ RAZORPAY_KEY_ID=rzp_test_xxx
 RAZORPAY_KEY_SECRET=your-razorpay-secret
 SMTP_HOST=smtp.example.com
 SMTP_PORT=587
-SMTP_USER=noreply@lumiere.com
+SMTP_USER=noreply@suarin.com
 SMTP_PASS=email-password
-FRONTEND_URL=https://lumiere.com
+FRONTEND_URL=https://suarin.com
 ```

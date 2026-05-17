@@ -46,7 +46,7 @@ export default function Navbar() {
               whileHover={{ scale: 1.02 }}
               transition={{ duration: 0.2 }}
             >
-              LUMIÈRE
+              SUARIN
             </motion.span>
           </Link>
 

@@ -244,7 +244,7 @@ export default function ProductPage() {
               <div className="space-y-4 text-base font-light leading-relaxed text-muted-foreground">
                 <p>{product.description}</p>
                 <p>
-                  Each Lumière candle is hand-poured in small batches using 100% natural soy wax
+                  Each SUARIN candle is hand-poured in small batches using 100% natural soy wax
                   and premium cotton wicks. Our fragrances are carefully blended using the finest
                   essential oils and phthalate-free fragrance oils.
                 </p>

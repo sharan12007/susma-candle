@@ -19,7 +19,7 @@ const contactInfo = [
   {
     icon: Mail,
     title: 'Email',
-    details: 'hello@lumiere.com',
+    details: 'hello@suarin.com',
     description: 'We respond within 24 hours',
   },
   {
@@ -31,7 +31,7 @@ const contactInfo = [
   {
     icon: MapPin,
     title: 'Address',
-    details: '123 Rue de la Lumière',
+    details: '123 Rue de la SUARIN',
     description: 'Paris, 75001 France',
   },
   {

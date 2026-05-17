@@ -38,7 +38,7 @@ export default function PrivacyPage() {
                 <h2 className="text-2xl font-light tracking-wide text-foreground">Introduction</h2>
                 <div className="mt-4 space-y-4 text-muted-foreground">
                   <p>
-                    At Lumière, we are committed to protecting your privacy and ensuring the security 
+                    At SUARIN, we are committed to protecting your privacy and ensuring the security 
                     of your personal information. This Privacy Policy explains how we collect, use, 
                     disclose, and safeguard your information when you visit our website or make a purchase.
                   </p>
@@ -164,10 +164,10 @@ export default function PrivacyPage() {
                     please contact us at:
                   </p>
                   <p>
-                    Lumière<br />
-                    123 Rue de la Lumière<br />
+                    SUARIN<br />
+                    123 Rue de la SUARIN<br />
                     Paris, 75001 France<br />
-                    Email: privacy@lumiere.com
+                    Email: privacy@SUARIN.com
                   </p>
                 </div>
               </div>

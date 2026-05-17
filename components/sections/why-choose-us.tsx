@@ -44,10 +44,10 @@ export default function WhyChooseUs() {
           className="mb-16 text-center"
         >
           <span className="mb-4 inline-block text-sm font-light tracking-[0.3em] text-primary">
-            WHY LUMIÈRE
+            WHY SUARIN
           </span>
           <h2 className="mb-4 text-3xl font-light tracking-tight text-foreground md:text-4xl lg:text-5xl">
-            The Lumière Difference
+            The SUARIN Difference
           </h2>
           <p className="mx-auto max-w-2xl text-base font-light leading-relaxed text-muted-foreground">
             We believe in creating more than candles—we create experiences that elevate your everyday moments.

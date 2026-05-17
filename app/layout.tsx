@@ -16,11 +16,11 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Lumière | Luxury Artisan Candles',
+  title: 'SUARIN | Luxury Artisan Candles',
   description: 'Experience the art of illumination with our handcrafted luxury candles. Each piece is a masterwork of scent and light, designed to transform your space.',
   keywords: ['luxury candles', 'artisan candles', 'handcrafted', 'home fragrance', 'premium candles'],
   openGraph: {
-    title: 'Lumière | Luxury Artisan Candles',
+    title: 'SUARIN | Luxury Artisan Candles',
     description: 'Experience the art of illumination with our handcrafted luxury candles.',
     type: 'website',
   },

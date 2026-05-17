@@ -7,7 +7,7 @@ import { Plus, Minus } from 'lucide-react'
 const faqs = [
   {
     question: 'What type of wax do you use?',
-    answer: 'All Lumière candles are made with 100% natural soy wax sourced from sustainable farms. Soy wax burns cleaner and longer than paraffin, releasing fragrance gradually and evenly.',
+    answer: 'All SUARIN candles are made with 100% natural soy wax sourced from sustainable farms. Soy wax burns cleaner and longer than paraffin, releasing fragrance gradually and evenly.',
   },
   {
     question: 'How long do your candles burn?',

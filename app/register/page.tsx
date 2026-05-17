@@ -93,7 +93,7 @@ export default function RegisterPage() {
             <div className="mb-8 text-center">
               <h1 className="mb-2 text-2xl font-light tracking-wide text-foreground">Create Account</h1>
               <p className="text-sm text-muted-foreground">
-                Join Lumière for an elevated shopping experience
+                Join SUARIN for an elevated shopping experience
               </p>
             </div>
 

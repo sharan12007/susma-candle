@@ -24,8 +24,8 @@ import { Order, OrderStatus, TrackingEvent } from '@/lib/types'
 
 // Mock order data - replace with API call
 const mockOrderData: Record<string, Order> = {
-  'LUM-ABC123-XYZ': {
-    id: 'LUM-ABC123-XYZ',
+  'SUA-ABC123-XYZ': {
+    id: 'SUA-ABC123-XYZ',
     userId: '1',
     items: [
       { productId: '1', productName: 'Midnight Amber', quantity: 2, price: 68 },
@@ -183,7 +183,7 @@ function TrackOrderContent() {
             <div className="mx-auto max-w-md">
               <div className="flex gap-3">
                 <Input
-                  placeholder="Enter Order ID (e.g., LUM-ABC123-XYZ)"
+                  placeholder="Enter Order ID (e.g., SUA-ABC123-XYZ)"
                   value={searchOrderId}
                   onChange={(e) => setSearchOrderId(e.target.value)}
                   onKeyDown={(e) => e.key === 'Enter' && handleSearch()}
@@ -377,7 +377,7 @@ function TrackOrderContent() {
               className="rounded-xl border border-border bg-card p-12 text-center"
             >
               <Package className="mx-auto mb-4 h-16 w-16 text-muted-foreground" />
-              <p className="mb-2 text-lg text-foreground">Track your Lumière order</p>
+              <p className="mb-2 text-lg text-foreground">Track your SUARIN order</p>
               <p className="text-sm text-muted-foreground">
                 Enter your order ID above to see real-time tracking updates
               </p>

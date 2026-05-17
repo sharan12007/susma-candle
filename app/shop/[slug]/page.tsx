@@ -275,7 +275,7 @@ export default function ProductDetailPage() {
               <TabsContent value="details" className="mt-6">
                 <div className="prose prose-invert max-w-none">
                   <p className="text-muted-foreground">
-                    Each Lumière candle is handcrafted with care using premium natural ingredients. 
+                    Each SUARIN candle is handcrafted with care using premium natural ingredients. 
                     Our {product.name} candle features a unique blend of fragrances that create an 
                     immersive sensory experience, perfect for transforming any space into a 
                     sanctuary of calm and luxury.
@@ -305,7 +305,7 @@ export default function ProductDetailPage() {
               <TabsContent value="care" className="mt-6">
                 <div className="prose prose-invert max-w-none">
                   <p className="text-muted-foreground">
-                    To get the most out of your Lumière candle, follow these care tips:
+                    To get the most out of your SUARIN candle, follow these care tips:
                   </p>
                   <ul className="mt-4 space-y-2 text-muted-foreground">
                     <li>Trim the wick to 1/4 inch before each use</li>

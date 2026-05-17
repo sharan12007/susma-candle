@@ -35,5 +35,5 @@ export function formatDateTime(date: Date | string): string {
 export function generateOrderId(): string {
   const timestamp = Date.now().toString(36).toUpperCase()
   const random = Math.random().toString(36).substring(2, 6).toUpperCase()
-  return `LUM-${timestamp}-${random}`
+  return `SUA-${timestamp}-${random}`
 }

@@ -71,7 +71,7 @@ const mockStats = {
 
 const mockOrders: (Order & { customerName: string })[] = [
   {
-    id: 'LUM-ABC123-XYZ',
+    id: 'SUA-ABC123-XYZ',
     userId: '1',
     customerName: 'John Doe',
     items: [
@@ -101,7 +101,7 @@ const mockOrders: (Order & { customerName: string })[] = [
     updatedAt: new Date('2024-01-18'),
   },
   {
-    id: 'LUM-DEF456-ABC',
+    id: 'SUA-DEF456-ABC',
     userId: '2',
     customerName: 'Jane Smith',
     items: [{ productId: '2', productName: 'Rose Noir', quantity: 3, price: 75 }],
@@ -128,7 +128,7 @@ const mockOrders: (Order & { customerName: string })[] = [
     updatedAt: new Date('2024-01-18'),
   },
   {
-    id: 'LUM-GHI789-DEF',
+    id: 'SUA-GHI789-DEF',
     userId: '3',
     customerName: 'Mike Johnson',
     items: [{ productId: '6', productName: 'Fireside', quantity: 1, price: 65 }],
@@ -155,7 +155,7 @@ const mockOrders: (Order & { customerName: string })[] = [
     updatedAt: new Date('2024-01-18'),
   },
   {
-    id: 'LUM-JKL012-GHI',
+    id: 'SUA-JKL012-GHI',
     userId: '4',
     customerName: 'Sarah Williams',
     items: [
@@ -242,7 +242,7 @@ export default function AdminDashboard() {
         <div className="mx-auto flex max-w-7xl items-center justify-between">
           <div className="flex items-center gap-4">
             <Link href="/" className="text-xl font-light tracking-[0.2em] text-foreground">
-              LUMIÈRE
+              SUARIN
             </Link>
             <Badge variant="secondary">Admin</Badge>
           </div>

@@ -9,20 +9,20 @@ import { Badge } from '@/components/ui/badge'
 const pressReleases = [
   {
     date: 'March 2024',
-    title: 'Lumière Wins International Fragrance Award',
+    title: 'SUARIN Wins International Fragrance Award',
     excerpt: 'Our Golden Hour limited edition candle has been recognized with the prestigious International Fragrance Award for Best Home Fragrance.',
     link: '#',
   },
   {
     date: 'January 2024',
-    title: 'Lumière Expands to Asian Markets',
+    title: 'SUARIN Expands to Asian Markets',
     excerpt: 'Announcing our expansion into Japan and South Korea, bringing luxury French candles to new audiences.',
     link: '#',
   },
   {
     date: 'November 2023',
     title: 'Achieving Carbon Neutral Certification',
-    excerpt: 'Lumière becomes one of the first luxury candle brands to achieve carbon neutral certification across all operations.',
+    excerpt: 'SUARIN becomes one of the first luxury candle brands to achieve carbon neutral certification across all operations.',
     link: '#',
   },
   {
@@ -36,11 +36,11 @@ const pressReleases = [
 const mediaFeatures = [
   {
     publication: 'Vogue Living',
-    quote: 'Lumière has redefined what luxury home fragrance can be. Their attention to detail and commitment to sustainability sets a new standard.',
+    quote: 'SUARIN has redefined what luxury home fragrance can be. Their attention to detail and commitment to sustainability sets a new standard.',
   },
   {
     publication: 'Architectural Digest',
-    quote: 'The candles that interior designers are obsessing over. Lumière combines French elegance with conscious craftsmanship.',
+    quote: 'The candles that interior designers are obsessing over. SUARIN combines French elegance with conscious craftsmanship.',
   },
   {
     publication: 'The New York Times',
@@ -71,7 +71,7 @@ export default function PressPage() {
               Press & Media
             </h1>
             <p className="mx-auto mt-6 max-w-2xl text-lg font-light leading-relaxed text-muted-foreground">
-              News, press releases, and media resources about Lumière. 
+              News, press releases, and media resources about SUARIN. 
               For press inquiries, please contact our media relations team.
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-4">
@@ -163,7 +163,7 @@ export default function PressPage() {
               Press Releases
             </h2>
             <p className="mt-2 text-muted-foreground">
-              Latest news and announcements from Lumière
+              Latest news and announcements from SUARIN
             </p>
           </motion.div>
 
@@ -209,8 +209,8 @@ export default function PressPage() {
             <div className="mt-6 text-center">
               <p className="font-medium text-foreground">Sophie Martin</p>
               <p className="text-muted-foreground">Head of Communications</p>
-              <a href="mailto:press@lumiere.com" className="mt-2 inline-block text-primary hover:underline">
-                press@lumiere.com
+              <a href="mailto:press@suarin.com" className="mt-2 inline-block text-primary hover:underline">
+                press@suarin.com
               </a>
             </div>
             <Button asChild size="lg" className="mt-8">

@@ -61,7 +61,7 @@ export default function SustainabilityPage() {
               Our Commitment to Sustainability
             </h1>
             <p className="mx-auto mt-6 max-w-2xl text-lg font-light leading-relaxed text-muted-foreground">
-              At Lumière, we believe luxury and sustainability go hand in hand. 
+              At SUARIN, we believe luxury and sustainability go hand in hand. 
               Every decision we make considers its impact on our planet.
             </p>
           </motion.div>
@@ -142,7 +142,7 @@ export default function SustainabilityPage() {
               </h2>
               <div className="mt-4 space-y-4 text-muted-foreground">
                 <p>
-                  From our founding, Lumière has been committed to creating products that bring joy 
+                  From our founding, SUARIN has been committed to creating products that bring joy 
                   without harming our planet. We started with a simple premise: luxury doesn&apos;t have 
                   to come at the expense of the environment.
                 </p>

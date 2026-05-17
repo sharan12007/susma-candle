@@ -1,6 +1,6 @@
-'use client'
+"use client"
 
-import { useEffect, useState } from 'react'
+import { Suspense, useEffect, useState } from 'react'
 import Link from 'next/link'
 import { useSearchParams } from 'next/navigation'
 import { motion } from 'framer-motion'
@@ -8,9 +8,9 @@ import { CheckCircle, Package, ArrowRight, Mail } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import Footer from '@/components/footer'
 
-export default function OrderConfirmationPage() {
+function OrderConfirmationContent() {
   const searchParams = useSearchParams()
-  const orderId = searchParams.get('orderId') || 'LUM-DEMO-ORDER'
+  const orderId = searchParams.get('orderId') || 'SUA-DEMO-ORDER'
   const [showConfetti, setShowConfetti] = useState(true)
 
   useEffect(() => {
@@ -59,9 +59,14 @@ export default function OrderConfirmationPage() {
           >
             <div className="mb-4 flex items-center justify-center gap-2">
               <Package className="h-5 w-5 text-primary" />
-              <span className="text-sm font-medium text-muted-foreground">Order ID</span>
+              <span className="text-sm font-medium text-muted-foreground">
+                Order ID
+              </span>
             </div>
-            <p className="mb-4 text-2xl font-medium tracking-wider text-foreground">{orderId}</p>
+
+            <p className="mb-4 text-2xl font-medium tracking-wider text-foreground">
+              {orderId}
+            </p>
 
             <div className="flex items-center justify-center gap-2 text-sm text-muted-foreground">
               <Mail className="h-4 w-4" />
@@ -69,32 +74,46 @@ export default function OrderConfirmationPage() {
             </div>
           </motion.div>
 
-          {/* What&apos;s Next */}
+          {/* What's Next */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5 }}
             className="mb-8 space-y-4 rounded-xl border border-border bg-card p-6 text-left"
           >
-            <h2 className="font-medium text-foreground">What happens next?</h2>
+            <h2 className="font-medium text-foreground">
+              What happens next?
+            </h2>
+
             <ol className="space-y-3 text-sm text-muted-foreground">
               <li className="flex items-start gap-3">
                 <span className="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-primary/10 text-xs font-medium text-primary">
                   1
                 </span>
-                <span>We&apos;ll prepare your handcrafted candles with care</span>
+
+                <span>
+                  We&apos;ll prepare your handcrafted candles with care
+                </span>
               </li>
+
               <li className="flex items-start gap-3">
                 <span className="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-primary/10 text-xs font-medium text-primary">
                   2
                 </span>
-                <span>You&apos;ll receive a shipping confirmation with tracking details</span>
+
+                <span>
+                  You&apos;ll receive a shipping confirmation with tracking details
+                </span>
               </li>
+
               <li className="flex items-start gap-3">
                 <span className="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-primary/10 text-xs font-medium text-primary">
                   3
                 </span>
-                <span>Your candles will arrive beautifully packaged at your doorstep</span>
+
+                <span>
+                  Your candles will arrive beautifully packaged at your doorstep
+                </span>
               </li>
             </ol>
           </motion.div>
@@ -112,6 +131,7 @@ export default function OrderConfirmationPage() {
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
+
             <Button asChild variant="outline" size="lg">
               <Link href="/shop">Continue Shopping</Link>
             </Button>
@@ -121,5 +141,13 @@ export default function OrderConfirmationPage() {
 
       <Footer />
     </main>
+  )
+}
+
+export default function OrderConfirmationPage() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <OrderConfirmationContent />
+    </Suspense>
   )
 }

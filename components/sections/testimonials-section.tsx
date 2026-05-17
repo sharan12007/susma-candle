@@ -17,14 +17,14 @@ const testimonials = [
     id: 2,
     name: 'James Chen',
     location: 'New York, USA',
-    quote: 'I have tried countless luxury candles, but Lumière stands apart. The attention to detail, from packaging to the final burn, is remarkable. These are now the only candles I buy.',
+    quote: 'I have tried countless luxury candles, but SUARIN stands apart. The attention to detail, from packaging to the final burn, is remarkable. These are now the only candles I buy.',
     rating: 5,
   },
   {
     id: 3,
     name: 'Isabella Rossi',
     location: 'Milan, Italy',
-    quote: 'As an interior designer, I am very particular about the ambiance I create for my clients. Lumière candles are my secret weapon—elegant, sophisticated, and beautifully crafted.',
+    quote: 'As an interior designer, I am very particular about the ambiance I create for my clients. SUARIN candles are my secret weapon—elegant, sophisticated, and beautifully crafted.',
     rating: 5,
   },
 ]

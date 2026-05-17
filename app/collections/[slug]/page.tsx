@@ -19,7 +19,7 @@ const collectionsData: Record<string, {
   'signature-collection': {
     name: 'Signature Collection',
     description: 'Our most beloved fragrances, crafted to perfection.',
-    longDescription: 'The Signature Collection represents the heart and soul of Lumière. Each fragrance in this collection has been meticulously developed to create a perfect balance of notes that evolve beautifully as the candle burns. These are our most beloved scents, chosen for their ability to transform any space into a sanctuary of warmth and elegance.',
+    longDescription: 'The Signature Collection represents the heart and soul of SUARIN. Each fragrance in this collection has been meticulously developed to create a perfect balance of notes that evolve beautifully as the candle burns. These are our most beloved scents, chosen for their ability to transform any space into a sanctuary of warmth and elegance.',
     icon: Sparkles,
     category: 'Signature Collection',
   },

@@ -9,7 +9,7 @@ const collections = [
   {
     slug: 'signature-collection',
     name: 'Signature Collection',
-    description: 'Our most beloved fragrances, crafted to perfection. These timeless scents represent the essence of Lumière.',
+    description: 'Our most beloved fragrances, crafted to perfection. These timeless scents represent the essence of SUARIN.',
     icon: Sparkles,
     category: 'Signature Collection',
     image: '/products/signature.jpg',
