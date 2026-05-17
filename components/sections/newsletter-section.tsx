@@ -63,11 +63,13 @@ export default function NewsletterSection() {
                 onChange={(e) => setEmail(e.target.value)}
                 className="h-14 flex-1 border-border/50 bg-card/50 px-6 text-foreground placeholder:text-muted-foreground focus:border-primary"
                 required
+                suppressHydrationWarning
               />
               <Button
                 type="submit"
                 size="lg"
                 className="group h-14 bg-primary px-8 text-sm font-light tracking-wider text-primary-foreground hover:bg-primary/90"
+                suppressHydrationWarning
               >
                 SUBSCRIBE
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />

@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { motion } from 'framer-motion'
@@ -105,10 +105,11 @@ export default function AccountPage() {
   const [editedName, setEditedName] = useState(user?.name || '')
 
   // Redirect to login if not authenticated
-  if (!isLoading && !isAuthenticated) {
-    router.push('/login')
-    return null
-  }
+  useEffect(() => {
+    if (!isLoading && !isAuthenticated) {
+      router.push('/login')
+    }
+  }, [isLoading, isAuthenticated, router])
 
   if (isLoading) {
     return (
@@ -118,6 +119,11 @@ export default function AccountPage() {
         </div>
       </main>
     )
+  }
+
+  // Early return after useEffect setup to prevent rendering while redirecting
+  if (!isAuthenticated) {
+    return null
   }
 
   const handleSaveProfile = () => {

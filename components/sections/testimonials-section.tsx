@@ -99,12 +99,13 @@ export default function TestimonialsSection() {
           </AnimatePresence>
 
           {/* Navigation */}
-          <div className="mt-12 flex items-center justify-center gap-4">
+          <div className="mt-12 flex items-center justify-center gap-4" suppressHydrationWarning>
             <Button
               variant="outline"
               size="icon"
               onClick={prevTestimonial}
               className="h-12 w-12 rounded-full border-foreground/20 text-foreground hover:bg-foreground/5"
+              suppressHydrationWarning
             >
               <ChevronLeft className="h-5 w-5" />
             </Button>
@@ -116,6 +117,7 @@ export default function TestimonialsSection() {
                   className={`h-2 rounded-full transition-all duration-300 ${
                     index === currentIndex ? 'w-8 bg-primary' : 'w-2 bg-foreground/20'
                   }`}
+                  suppressHydrationWarning
                 />
               ))}
             </div>
@@ -124,6 +126,7 @@ export default function TestimonialsSection() {
               size="icon"
               onClick={nextTestimonial}
               className="h-12 w-12 rounded-full border-foreground/20 text-foreground hover:bg-foreground/5"
+              suppressHydrationWarning
             >
               <ChevronRight className="h-5 w-5" />
             </Button>

@@ -1,19 +1,37 @@
 'use client'
 
-import { Suspense, useRef, useMemo } from 'react'
-import { Canvas, useFrame, useLoader, useThree } from '@react-three/fiber'
+import { Suspense, useRef, useMemo, useState, useEffect } from 'react'
+import { Canvas, useFrame, useThree } from '@react-three/fiber'
 import { Float, Environment, useGLTF } from '@react-three/drei'
 import * as THREE from 'three'
 
 function FlowerModel({ mousePosition }: { mousePosition: { x: number; y: number } }) {
   const flowerRef = useRef<THREE.Group>(null)
+  const [textureLoaded, setTextureLoaded] = useState(false)
+  
   const { scene } = useGLTF('/flower-v1.glb')
-  const flowerTexture = useLoader(THREE.TextureLoader, '/flower-v1-texture.jpg')
+  const textureLoader = new THREE.TextureLoader()
+  
+  let flowerTexture: THREE.Texture | null = null
 
   const model = useMemo(() => {
     const clone = scene.clone(true)
-    flowerTexture.colorSpace = THREE.SRGBColorSpace
-    flowerTexture.flipY = false
+    
+    // Load texture and apply material
+    textureLoader.load(
+      '/flower-v1-texture.jpg',
+      (texture) => {
+        texture.colorSpace = THREE.SRGBColorSpace
+        texture.flipY = false
+        flowerTexture = texture
+        setTextureLoaded(true)
+      },
+      undefined,
+      (error) => {
+        console.warn('Failed to load texture, using fallback material:', error)
+        setTextureLoaded(true)
+      }
+    )
 
     const box = new THREE.Box3().setFromObject(clone)
     const center = box.getCenter(new THREE.Vector3())
@@ -27,18 +45,21 @@ function FlowerModel({ mousePosition }: { mousePosition: { x: number; y: number 
       if (child instanceof THREE.Mesh) {
         child.castShadow = true
         child.receiveShadow = true
-        child.material = new THREE.MeshStandardMaterial({
-          map: flowerTexture,
-          color: new THREE.Color('#f4d7df'),
+        const materialConfig: any = {
+          color: new THREE.Color('#8B6F47'),
           roughness: 0.65,
           metalness: 0,
           side: THREE.DoubleSide,
-        })
+        }
+        if (flowerTexture) {
+          materialConfig.map = flowerTexture
+        }
+        child.material = new THREE.MeshStandardMaterial(materialConfig)
       }
     })
 
     return clone
-  }, [flowerTexture, scene])
+  }, [scene, textureLoader])
 
   useFrame((state) => {
     if (flowerRef.current) {
@@ -67,17 +88,17 @@ function Scene({ mousePosition }: { mousePosition: { x: number; y: number } }) {
 
   return (
     <>
-      <ambientLight intensity={0.55} />
-      <directionalLight position={[4, 6, 5]} intensity={1.2} color="#fff7ed" />
-      <pointLight position={[-5, 3, -5]} intensity={0.5} color="#f5c2e7" />
+      <ambientLight intensity={0.75} />
+      <directionalLight position={[4, 6, 5]} intensity={1.5} color="#fff7ed" />
+      <pointLight position={[-5, 3, -5]} intensity={0.8} color="#f5c2e7" />
       <spotLight
         position={[0, 8, 0]}
         angle={0.4}
         penumbra={1}
-        intensity={0.8}
+        intensity={1.2}
         color="#fff5e6"
       />
-      <Environment preset="studio" />
+      <Environment preset="studio" blur={0.4} />
       <group scale={scale}>
         <FlowerModel mousePosition={mousePosition} />
       </group>
@@ -110,9 +131,14 @@ export default function Candle3D() {
       <Canvas
         camera={{ position: [0, 0, 6], fov: 45 }}
         dpr={[1, 2]}
-        gl={{ antialias: true, alpha: true }}
+        gl={{ 
+          antialias: true, 
+          alpha: true,
+          preserveDrawingBuffer: true,
+        }}
         onCreated={({ gl }) => {
-          gl.setClearColor(0x000000, 0)
+          gl.setClearColor(0xffffff, 0)
+          gl.setClearAlpha(0)
         }}
         style={{ background: 'transparent' }}
       >

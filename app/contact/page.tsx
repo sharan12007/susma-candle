@@ -31,8 +31,8 @@ const contactInfo = [
   {
     icon: MapPin,
     title: 'Address',
-    details: '123 Rue de la SUARIN',
-    description: 'Paris, 75001 France',
+    details: 'Komarapalayam',
+    description: 'Tamil Nadu, 638183 India',
   },
   {
     icon: Clock,
